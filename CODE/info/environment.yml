@@ -1,0 +1,31 @@
+# environment.yml
+
+name: flowchart_ocr
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.8
+
+  # Core dependencies
+  - opencv=4.8.0
+  - numpy=1.24.0
+  - pytesseract=0.3.10
+  - pillow=9.4.0
+  
+  # Image processing enhancements
+  - scikit-image=0.19.3
+  - imutils=0.5.4
+  
+  # Development tools
+  - jupyter=1.0.0
+  - matplotlib=3.7.1
+  - pytest=7.3.1
+  
+  # Additional utilities
+  - pip=23.0.1
+  - pip:
+    - pdf2image==1.16.3
+    - python-magic==0.4.27
+    - tqdm==4.65.0
